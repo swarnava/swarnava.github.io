@@ -37,11 +37,6 @@ span#smalltext{
 }
 
 
-#pubbl-wrapper{
-    margin-top: -1em;
-}
-
-
 h2{
     font-family: "Roboto Slab", sans-serif;
     font-weight: 500;
@@ -75,29 +70,6 @@ em {
 
 }
 
-/*a:hover {
-    text-decoration: underline;
-}*/
-
-.pubbl{
-    font-size: 1em;
-    line-height: 1.5;
-    list-style-type: disc;
-    list-style-position: outside;
-    padding-left: 30px;
-}
-
-a.on-dark-background:link, a.on-dark-background:visited, a.on-dark-background:hover, a.on-dark-background:active {
-    color: white;
-    text-decoration: underline;
-}
-
-ul.year{
-    list-style-type: none;
-    list-style-position:inside;
-    margin: 0;
-    padding: 0;
-}
 
 div#pic{
     width: 250px;
@@ -111,17 +83,6 @@ div#pic{
     margin-bottom: 52px;
 }
 
-.files{
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-size: 0.6em;
-    position:relative;
-    bottom: 2px;
-    left: 6px;
-    letter-spacing: 0px;
-    word-spacing: 0px;
-    word-break: keep-all;
-}
 
 
 
@@ -162,9 +123,6 @@ div#pic{
         padding-top: .5em;
         margin-bottom: .6em;
         margin-top: 1.8em;
-    }
-    #pubbl-wrapper{
-       margin-top: -2em;
     }
     h2, h3 {
         letter-spacing: 2px;
