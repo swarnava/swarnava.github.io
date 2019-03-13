@@ -10,11 +10,11 @@ $(document).ready(function() {
     });
 
     // write message in c0nsol3 :)
-	console.log("mysite@axelvf:~$");
-	console.log("mysite@axelvf:~$");
-	console.log("mysite@axelvf:~$");
-	console.log("mysite@axelvf:~$ What are you doing here?");
-	console.log("mysite@axelvf:~$");
+	console.log("mysite@swarnava:~$");
+	console.log("mysite@swarnava:~$");
+	console.log("mysite@swarnava:~$");
+	console.log("mysite@swarnava:~$ What are you doing here?");
+	console.log("mysite@swarnava:~$");
 
     // Hash links
  $('a[href*="#"]')
