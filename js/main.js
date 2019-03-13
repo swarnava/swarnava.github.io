@@ -106,13 +106,31 @@ function fixSizes() {
  // Change header nav on scroll
 
 $(function(){
+	
+var position = $( "#about_swarnava" ).offset().top;
+
+//alert(menu_name_position.top);
+//alert(position);
+//alert(position.top);
 $(window).on('scroll', function() {
+	
     var scrollTop = $(this).scrollTop();
-    $('section').each(function() {
+	$('section').each(function() {
         var topDistance = $(this).offset().top - $('header').outerHeight();
-        if ( (topDistance) < scrollTop ) {
+		if(scrollTop > position-170 )
+			{
+				 $('.menu-name').css('visibility','hidden');
+				 $('#clone_text').css('visibility','visible');
+			}
+			else
+			{
+				 $('.menu-name').css('visibility','visible');
+				  $('#clone_text').css('visibility','hidden');
+			}
+		if ( (topDistance) < scrollTop) {
             $('.menu a').css('color',$(this).attr('data-color'));
         }
+		
     });
 });
 })
