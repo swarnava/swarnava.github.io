@@ -103,6 +103,10 @@ function fixSizes() {
     });
 };
 
+$('.glitch-txt').click(function(){
+  $('body, html').animate({scrollTop: 0}, 500);
+});
+
  // Change header nav on scroll
 
 $(function(){

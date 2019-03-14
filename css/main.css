@@ -108,20 +108,37 @@ h1, h2, h3, h4, h5, h6, p {
     position: fixed;
     z-index: 9999;
 }
+@media only screen and (max-width: 700px) {
+	
+	.loader-content {
+		position: absolute;
+		top: 25%;
+		width: 100%;
+		text-align: left;
+		padding-left: 4vw;
 
-.loader-content {
-    position: absolute;
-    top: 25%;
-    width: 100%;
-    text-align: left;
-    padding-left: 4vw;
-
-    font-family: 'Karla', sans-serif;
-    font-size: 3rem;
-    line-height: 1.8;
-    color: #fff;
+		font-family: 'Karla', sans-serif;
+		font-size:1.7rem;
+		line-height: 1.8;
+		color: #fff;
+	}
 }
 
+@media only screen and (min-width: 701px) {
+	
+	.loader-content {
+		position: absolute;
+		top: 25%;
+		width: 100%;
+		text-align: left;
+		padding-left: 4vw;
+
+		font-family: 'Karla', sans-serif;
+		font-size:  3rem;
+		line-height: 1.8;
+		color: #fff;
+	}
+}
 .loader-content span {
     -webkit-animation: loaderIcon 0.8s ease-in-out infinite;
          -o-animation: loaderIcon 0.8s ease-in-out infinite;
@@ -160,7 +177,7 @@ header .menu a.menu-name, header .menu .menu-sections ul li a  {  color: #fff;}
 header.active .menu a.menu-name, header.active .menu .menu-sections ul li a  {  color: #000;}
 .menu a.menu-name {
     font-family: 'Karla', sans-serif;
-    font-size: 2rem;
+    font-size: 32px;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -187,35 +204,28 @@ header.active .menu a.menu-name, header.active .menu .menu-sections ul li a  {  
     border-color: black;
 }
 
-@media (max-width: 779px) {
+@media (max-width: 700px) {
     .menu a.menu-name {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         margin: 20px 0 0 0;
     }
     .menu .menu-sections {
         display: none;
     }
+}
+@media (max-width: 700px) {
+    #clone_text {
+        font-size: 1.6rem;
+	}
+    
+}
+@media (min-width: 701px) {
+    #clone_text {
+        font-size:33.5px;
+	}
+    
 }
 
-@media (max-width: 459px) {
-    .menu a.menu-name {
-        font-size: 1rem;
-        margin: 20px 0 0 0;
-    }
-    .menu .menu-sections {
-        display: none;
-    }
-}
-
-@media (max-width: 319px) {
-    .menu a.menu-name {
-        font-size: 1rem;
-        margin: 20px 0 0 0;
-    }
-    .menu .menu-sections {
-        display: none;
-    }
-}
 
 
 /* ==========================================================================
@@ -724,4 +734,10 @@ section {
 @keyframes loaderIcon {
     0% { opacity: 0; }
     100% { opacity: 1; }
+}
+
+#c_span {
+	-webkit-transform:	scaleX(-1);
+	transform:			scaleX(-1);
+	display:inline-block;
 }
