@@ -366,6 +366,7 @@ section {
 @media (min-width: 779px) and (max-width: 3000px) {
 .glitch-txt {
     position: relative;
+    cursor: pointer;
 }
 
 @keyframes noise-anim {
@@ -737,7 +738,7 @@ section {
 }
 
 #c_span {
-	-webkit-transform:	scaleX(-1);
-	transform:			scaleX(-1);
-	display:inline-block;
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+	display: inline-block;
 }
